@@ -1,3 +1,5 @@
+/*Tat Putjorn 672115024 */
+
 import java.io.*;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -5,10 +7,10 @@ import java.util.Vector;
 
 public class Tutorial2 { 
     public static void main(String[] args) throws FileNotFoundException {
-        File f = new File("C:\\Users\\ACER\\Documents\\ADT name list\\701000-2.csv");
+        File f = new File("C:/Users/ACER/Documents/ADT name list/953102_701000-2.csv");
         Scanner in = new Scanner(f);
 
-        for (int i=0;i<7 && in.hasNextLine();i++){
+        for (int i=0;i<7;i++){
             in.nextLine();
             }
 
@@ -59,15 +61,15 @@ public class Tutorial2 {
             System.out.println("Total number of students: " + totalStudents);
             for (char letter = 'a'; letter <= 'z'; letter++) {
                 int count = countNamesStartingWith(studentData, letter);
-                 System.out.println("Count of names starting with " + letter + ": " + count);
-        if (count > 0) {
-            System.out.println("Students with names starting with " + letter + ":");
-            showStudentsWithLetter(studentData, letter);
-            System.out.println(); 
-        } 
+                System.out.println("Count of names starting with " + letter + ": " + count);
+                if (count > 0) {
+                    System.out.println("Students with names starting with " + letter + ":");
+                    showStudentsWithLetter(studentData, letter);
+                }
+                System.out.println();
+            }
+        }
     }
-  }
-}
  
 
     
