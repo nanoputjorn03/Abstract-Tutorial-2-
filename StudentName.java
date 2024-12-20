@@ -1,3 +1,5 @@
+/*Tat Putjorn 672115024 */
+
 public class StudentName {
     
     private String SID;
@@ -6,8 +8,8 @@ public class StudentName {
 
     public StudentName(String SID, String Firstname, String Lastname) {
         this.SID = SID;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.firstname = Firstname;
+        this.lastname = Lastname;
     }
     public String getFirstName() {
         return firstname;
